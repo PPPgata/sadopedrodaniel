@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    font-family: Arial;
+}
+
+header{
+    background-color: rgb(247, 48, 48);
+    padding: 16px;
+    z-index: 12;
+    position: fixed;
+    width: 888800px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 40px;
+}
+
+
+
+nav{
+    background-color: rgb(230, 79, 79);
+    color: #c05959;
+    padding: 1px;
+    height: 170px;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    margin-top: 130px;   
+    margin-right: 79px;
+}
+
+nav li > a{
+    text-decoration: none;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 8px;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.active{
+    font-weight: bold;
+}
+
+nav li > a:hover{
+    color: #6b0d34;
+    border-bottom: 2px solid #6b0d34;
+}
+
+ 
+.container{
+    border: 1px solid black;
+    border-radius: 0.35em;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    width: 85%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.row-color-aliceblue{
+    background-color: aliceblue;
+}
+
+.col{
+    height: 500px;
+    padding: 24px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col img{
+    margin-top: 70px;
+    width: 300px;
+    border-radius: 0.85em;
+}
+
+.col-text{
+    padding: 54px;
+    text-align: justify;
+    padding-right: 74px;
+    border: 1px solid black;
+    border-radius: 0.35em;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-right:34px;
+    width: 85%;
+    
+
+}
+
+
+footer{
+    background-color: #cf0000;
+    color: aliceblue;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 190px;
+}
+
+footer ul{
+    list-style: none;
+    margin-right: 70px;
+    
+}
+
+footer li{
+    margin: 8px;
+}
+
+
+
+
+
+button{
+    width: 72%;
+    border-radius: 0.45em;
+    padding: 8px;
+    background-color: #cf0000;
+    outline: none;
+    color: #fff;
+
+}
+
+

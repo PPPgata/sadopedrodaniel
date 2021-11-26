@@ -1,0 +1,145 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Termodinâmica</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1><a href="">2º Ano SESI-SENAI - Termodinâmica</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>   
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="./img/temogif.gif" alt="imagem termodinâmica">
+            </div>
+
+            <div class="col-text">
+                <p>TRABALHO REALIZADO PELO GÁS (ΔU)</p>
+                    <label>--Energia Térmica (Q)</label>
+                    <input type="number"
+                        id="x"
+                        placeholder="escreva o número aqui">
+                        <p></p>
+                        <label>--Trabalho Realizado (T)</label>
+                    <input type="number"
+                        id="y"
+                        placeholder="escreva o número aqui">     
+                        <p>ΔU = Q - T</p>
+                        <button type="button" onclick="subtrair()">Calcular</button>
+                <p>.</p>
+                <P>.</P>
+
+                <p>VARIAÇÃO DA ENERGIA INTERNA (Q)</p>
+                    <label>--Energia Interna (ΔU)</label>
+                    <input type="number"
+                        id="oi"
+                        placeholder="escreva o número aqui">
+                        <p></p>
+
+                    <label>--Trabalho Realizado (T)</label>
+                    <input type="number"
+                        id="io"
+                        placeholder="escreva o número aqui">     
+                        <p>Q = ΔU + T</p>
+                        <button type="button" onclick="somar()">Calcular</button>                      
+
+
+                    
+            </div>
+
+            <div class="col-text">
+                <p>VARIAÇÃO DA ENERGIA INTERNA (T)</p>
+                    <label>--Energia Térmica (Q)</label>
+                    <input type="number"
+                        id="xo"
+                        placeholder="escreva o número aqui">
+                        <p></p>
+                        <label>--Energia Interna (ΔU)</label>
+                    <input type="number"
+                        id="yo"
+                        placeholder="escreva o número aqui">     
+                        <p>T = Q - ΔU</p>
+                        <button type="button" onclick="subtrairo()">Calcular</button>
+                <p>.</p>
+                <P>.</P>
+
+                <p>EFICIÊNCIA DA MÁQUINA TÉRMICA (n)</p>
+                    <label>--Fonte Quente (Q1)</label>
+                    <input type="number"
+                        id="pi"
+                        placeholder="escreva o número aqui">
+                        <p></p>
+
+                    <label>--Fonte Frio (Q2)</label>
+                    <input type="number"
+                        id="ip"
+                        placeholder="escreva o número aqui">     
+                        <p>n = 1 - Q2/Q1</p>
+                        <button type="button" onclick="somarp()">Calcular</button>                      
+
+
+                    
+            </div>
+
+
+            <script>
+                    const subtrair = function(){
+                        let x = parseFloat (document.getElementById('x').value)
+                        let y = parseFloat (document.getElementById('y').value)
+                        let resultado2 = x - y
+                        alert (resultado2)
+                    }
+                    const somar = function(){
+                        let oi = parseFloat (document.getElementById('oi').value)
+                        let io = parseFloat (document.getElementById('io').value)
+                        let resultado = oi + io
+                        alert (resultado)
+                    }
+                                   
+                    
+            </script>
+            
+            <script>
+                    const subtrairo = function(){
+                        let xo = parseFloat (document.getElementById('xo').value)
+                        let yo = parseFloat (document.getElementById('yo').value)
+                        let resultado2o = xo - yo
+                        alert (resultado2o)
+                    }
+                    const somarp = function(){
+                        let pi = parseFloat (document.getElementById('pi').value)
+                        let ip = parseFloat (document.getElementById('ip').value)
+                        let resultado6 = pi / ip - 1
+                        alert (resultado6)
+                    }
+                                   
+            </script>
+        </div>
+
+
+    </div> 
+  
+    <footer>
+        <ul>
+            <li>Trabalho de Termodinâmica
+                <br>Aluno:Pedro daniel Aguiar Paes da Silva
+            </li>
+        </ul>
+    </footer>
+</body>
